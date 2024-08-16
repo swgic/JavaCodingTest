@@ -1,0 +1,150 @@
+	// 1049번 : [기초-비교연산] 두 정수 입력받아 비교하기
+		
+		Scanner  sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a>b)
+		System.out.printf("1");
+		else {
+			System.out.printf("0");
+		}
+		
+		
+		// 1050 : [기초-비교연산] 두 정수 입력받아 비교하기
+		//두 정수(a, b)를 입력받아 a와 b가 같으면 1을, 같지 않으면 0을 출력하는 프로그램을 작성
+		
+		Scanner  sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a==b)
+			{System.out.printf("1");}
+		else {
+			System.out.printf("0");
+		}
+		
+		
+		//1051 : [기초-비교연산] 두 정수 입력받아 비교하기
+		Scanner  sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(b>=a)
+		{System.out.print("1");
+		}
+		else {System.out.print(0);}
+		
+			// 1052 : [기초-비교연산] 두 정수 입력받아 비교하기
+		Scanner  sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a !=b)
+		{System.out.printf("1");}
+		else {
+			System.out.printf("0");
+		}
+		
+		// 1053 : [기초-논리연산] 참 거짓 바꾸기(설명)
+		//1(true, 참) 또는 0(false, 거짓) 이 입력되었을 때 반대로 출력하는 프로그램을 작성
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		if(a == 1 )
+		{System.out.print(0);
+		}
+		else {
+			System.out.print(1);
+		}
+			
+		// 입력 후 결과과 안나오길래 뭐가 잘못됐을까 봤더니 int형에 출력을 "0" 문자열로 받아서 출력이 안됐음
+		 
+		// 1054 : [기초-논리연산] 둘 다 참일 경우만 참 출력하기 
+		 두 개의 참(1) 또는 거짓(0)이 입력될 때, 모두 참일 때에만 참을 출력하는 프로그램을 작성
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a ==1 && b ==1)
+		{System.out.print("1");}
+		else {
+			System.out.print("0");
+		}
+		// 1055 : [기초-논리연산] 하나라도 참이면 참 출력하기
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a==1 || b==1)
+		{System.out.println(1);}
+		else {System.out.println(0);}
+		// 1. if(a==1 || b==0) 문제를 잘못 이해함 -> 두개의 참 또는 두개의 거짓 하나라도 참이라고 이해함
+	
+//		1057 : [기초-논리연산] 참/거짓이 서로 같을 때에만 참 출력
+		두 개의 참(1) 또는 거짓(0)이 입력될 때,
+		참/거짓이 서로 같을 때에만 참이 계산되는 프로그램을 작성해보자
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		// 둘다 1이거나 둘다 0일 때 참이다.
+		if(a == b)
+		{System.out.println(1);}
+		else {System.out.println(0);}
+
+
+		// 1058 : [기초-논리연산] 둘 다 거짓일 경우만 참 출력
+		 두 개의 참(1) 또는 거짓(0)이 입력될 때,
+		 모두 거짓일 때에만 참이 계산되는 프로그램을 작성
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		if( a==0 && b==0)
+		{
+			System.out.println(1);
+		}
+		else
+		{ System.out.println(0); 
+		}
+	
+		// 1059 : [기초-비트단위논리연산] 비트단위로 NOT 하여 출력
+		// 입력 된 정수를 비트단위로 참/거짓을 바꾼 후 정수로 출력해보자.
+		// 비트단위(bitwise)연산자 ~ 를 붙이면 된다.(~ : tilde, 틸드라고 읽는다.)
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		System.out.println(~a);
+	
+		// 1060 : [기초-비트단위논리연산] 비트단위로 AND 하여 출력
+		// 입력된 정수 두 개를 비트단위로 and 연산한 후 그 결과를 정수로 출력해보자.
+		// 비트단위(bitwise)연산자 &를 사용
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println( a & b);
+		//예를 들어 3과 5가 입력되었을 때를 살펴보면
+//		3       : 00000000 00000000 00000000 00000011
+//		5       : 00000000 00000000 00000000 00000101
+//		3 & 5 : 00000000 00000000 00000000 00000001
+//		이 된다.
+//		비트단위 and 연산은 두 비트열이 주어졌을 때,
+//		둘 다 1인 부분의 자리만 1로 만들어주는 것과 같다.
+// 		실제로 & 연산은 네트워크에 연결된 두개의 컴퓨터가 데이터를 주고받기위해 
+//		같은 네트워크에 있는지 판단하는데 사용 
+		
+		// 1061 : [기초-비트단위논리연산] 비트단위로 OR 하여 출력
+//		 입력된 정수 두 개를 비트단위로 or 연산한 후 그 결과를 정수로 출력해보자.
+//		 비트단위(bitwise) 연산자 |(or, vertical bar, 버티컬바)를 사용하면 된다.
+//		 둘중 하나라도 1이 있으면 1로 만들어줌
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println( a | b);
+		
+		// 1062 : [기초-비트단위논리연산] 비트단위로 XOR 하여 출력
+//		예를 들어 3과 5가 입력되었을 때를 살펴보면
+//		3       : 00000000 00000000 00000000 00000011
+//		5       : 00000000 00000000 00000000 00000101
+//		3 ^ 5 : 00000000 00000000 00000000 00000110
+//		 11
+//		 101
+//		 ----
+//		 110
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println( a^b);
