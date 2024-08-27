@@ -1,0 +1,9 @@
+import java.time.Year;
+
+class Solution {
+    public int solution(int age) {
+    
+        int now = 2022- age + 1;
+        return now;
+    }
+}
