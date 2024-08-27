@@ -1,0 +1,96 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Solution {
+	
+	public int solution(String[] babbling)
+	{
+//		int count = 0;
+//		
+//		// 정규 표현식 패턴: "aya", "ye", "woo", "ma"로만 이루어진 단어
+//		Pattern pattern = Pattern.compile("^(aya|ye|woo|ma)+$");
+//	
+//		// 
+//		for( String word : babbling)
+//		{
+//			Matcher matcher = pattern.matcher(word);
+//			if(matcher.matches())
+//				count++;
+//		}
+//		return count;
+		
+		
+ 		int answer =0;
+		
+		// 발음할 수 있는 문자열 리스트 
+		String[] words = {"aya", "ye", "woo", "ma"};
+		for(String word : babbling)
+		{	for(String validword : words)
+			{if(word.contains(validword)) {
+				word = word.replaceFirst(validword, "");
+				// 발견된 발음을 제거한다.
+			}
+			}
+		
+		}
+		 
+//		for(String word: babbling)
+//		{  
+//			for(String validword : words)
+//			{
+//				if(word.contains(validword)){
+//					word = word.replaceFirst(validword, "");
+//					// 발견된 발음을 제거한다.
+//				} 
+//			}
+//			
+//			// 발음 가능한 단어라면 빈 문자열이 되어야함
+//			if(word.isEmpty()) {
+//					answer++;
+//				}
+//		}
+//		
+		  for (String word : babbling) {
+	            String originalWord = word; // 원래 단어를 보존
+	            boolean isValid = true; // 현재 단어가 유효한지 플래그
+
+	            // 각 발음으로 문자열을 반복적으로 제거
+	            while (true) {
+	                boolean found = false; // 현재 발음을 찾았는지 플래그
+
+	                for (String validword : words) {
+	                    if (word.startsWith(validword)) { // 단어가 발음으로 시작하면
+	                        word = word.substring(validword.length()); // 해당 발음 부분 제거
+	                        found = true; // 발음이 발견됨
+	                        break; // 더 이상 발음을 찾을 필요 없음
+	                    }
+	                }
+
+	                if (!found) {
+	                    break; // 더 이상 발음을 찾지 못하면 반복 종료
+	                }
+	            }
+
+	            // 최종적으로 빈 문자열이면 유효한 단어
+	            if (word.isEmpty()) {
+	                answer++;
+	            }
+	 
+	}	return answer;
+	}}
+
+
+public class SolutionMain {
+
+	public static void main(String[] args) {
+
+		Solution sol = new Solution();
+		//String[] babbling = {"ayaye", "uuuma", "ye", "yemawoo", "ayaa"};
+		String[] babbling = {"aya", "yee", "u", "maa", "wyeoo"};
+		int result = sol.solution(babbling);
+		System.out.println(result);
+		
+		
+	}
+
+}
