@@ -1,4 +1,4 @@
-package programmers.basics11_15;
+package programmers.basics11_20;
 
 public class basics14_더크게합치기 {
 	public int solution(int intA, int intB) {

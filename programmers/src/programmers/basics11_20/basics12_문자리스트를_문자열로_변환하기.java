@@ -1,4 +1,4 @@
-package programmers.basics11_15;
+package programmers.basics11_20;
 
 public class basics12_문자리스트를_문자열로_변환하기 {
 	public String solution(String[] arr) {

@@ -1,4 +1,4 @@
-package programmers.basics11_15;
+package programmers.basics11_20;
 
 public class basics13_문자열곱하기 {
 	public String solution(String my_string, int intk) {

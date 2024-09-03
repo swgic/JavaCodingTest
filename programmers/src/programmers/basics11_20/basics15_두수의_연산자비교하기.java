@@ -1,4 +1,4 @@
-package programmers.basics11_15;
+package programmers.basics11_20;
 
 public class basics15_두수의_연산자비교하기 {
 	public int solution(int intA, int intB) {

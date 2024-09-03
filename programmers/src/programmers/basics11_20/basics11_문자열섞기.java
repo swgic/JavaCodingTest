@@ -1,4 +1,4 @@
-package programmers.basics11_15;
+package programmers.basics11_20;
 
 public class basics11_문자열섞기 {
 	 public String solution(String str1, String str2) {
