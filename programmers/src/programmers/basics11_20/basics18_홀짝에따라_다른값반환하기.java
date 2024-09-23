@@ -19,6 +19,8 @@ public class basics18_홀짝에따라_다른값반환하기 {
 		}
 		return sum;
 	}
+	
+	
 	public static void main(String[] args) {
 		basics18_홀짝에따라_다른값반환하기 solu = new basics18_홀짝에따라_다른값반환하기();
 		

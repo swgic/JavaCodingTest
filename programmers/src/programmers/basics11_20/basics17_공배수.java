@@ -17,6 +17,9 @@ public class basics17_공배수 {
 
 		return intAnswer;
 	}
+	
+	
+	
 	public static void main(String[] args) {
 		basics17_공배수 solu = new basics17_공배수();
 		int intRetVal1 = solu.solution(60, 2, 3);

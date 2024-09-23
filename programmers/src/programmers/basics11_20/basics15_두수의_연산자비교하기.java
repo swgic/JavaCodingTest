@@ -19,7 +19,7 @@ public class basics15_두수의_연산자비교하기 {
 	}
 	public static void main(String[] args) {
 		basics15_두수의_연산자비교하기 solu = new basics15_두수의_연산자비교하기();
-		int intNum = solu.solution(2, 91);
+		int intNum = solu.solution(91, 2);
 		System.out.println(intNum);
 	}
 
