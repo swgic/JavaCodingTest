@@ -7,8 +7,10 @@ public class basics25_이어붙인수 {
 		String strEven = "";
 		
 		if (intNum_list.length >= 2 && intNum_list.length <= 10) {
+			
 			for (int i=0; i < intNum_list.length; i++) {
 				if(intNum_list[i] >= 1 && intNum_list[i] <= 9) {
+					
 					if(intNum_list[i] % 2 == 0) {
 						strEven += Integer.toString(intNum_list[i]);
 					} else {
@@ -33,6 +35,6 @@ public class basics25_이어붙인수 {
 		System.out.println(intRetVal1);
 		System.out.println(intRetVal2);
 		
-		
+		// 확인
 	}
 }

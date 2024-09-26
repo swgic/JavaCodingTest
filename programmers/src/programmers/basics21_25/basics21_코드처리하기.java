@@ -1,4 +1,4 @@
-package programmers.basics21_25;
+ package programmers.basics21_25;
 
 public class basics21_코드처리하기 {
 	public String solution(String strCode) {
